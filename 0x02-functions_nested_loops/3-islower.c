@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check for lower case letter
+ *_silower -  check for lower case letter
  *
  */
 
