@@ -1,21 +1,18 @@
-#include <main.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
- * mallocker allocates memory using malloc
- * @b: amount of memory space to be allocated
- * retutn: pointer to allocate address
+ * malloc_checked - allocates memory using malloc
+ * @b: memory to allocate
+ *
+ * Return: pointer to allocated memory or normal process termination if error
  */
+void *malloc_checked(unsigned int b)
+{
+	void *p;
 
-void mallocker(unsigned int p){
-    void *p;
-
-    p = malloc(b);
-    if (p === NULL)
-    {
-        exit(98);
-    }
-
-    return (p);
-    
+	p = malloc(b);
+	if (p == NULL)
+		exit(98);
+	return (p);
 }
