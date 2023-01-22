@@ -1,23 +1,24 @@
 #include <stdio.h>
 #include <time.h>
-/** more headers go here */
+#include <stdlib.h>
 
-/** betty style for function main goes here */
+/**
+ * main print negative, positive or zero
+ *
+ * return: always 0 for int main
+ */
+
 int main(void)
-{
-    int n;
+{    int n;
 
     srand(time(0));
-    n  = rand() - RAND_MAX / 2;
-    if ( n > 0)
-    {
-        printf("%d is a positve\n", n);
-    }
-    else if ( n ==0 )
-    {
-        printf("%d is zero\n", n);
-    }
+    n = rand() - RAND_MAX / 2;
+
+    if (n > 0)
+    printf("%d is positive\n", n);
+    else if (n == 0)
+    printf("%d is zero\n", n);
     else
-        printf("%D is negative");
-    return (0);  
+    printf("%d is negative\n");
+    return (0);
 }
