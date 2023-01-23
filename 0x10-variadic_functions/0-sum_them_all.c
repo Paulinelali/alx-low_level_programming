@@ -16,11 +16,11 @@ int sum_all(unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-		va_start(vag, n);
+	va_start(vag, n);
 
-		for (i = 0; i < n; i++)
-			sum += va_arg(vqg, in);
-		va_end(vag);
+	for (i = 0; i < n; i++)
+		sum += va_arg(vqg, in);
+	va_end(vag);
 
 	return (sum);
 }
