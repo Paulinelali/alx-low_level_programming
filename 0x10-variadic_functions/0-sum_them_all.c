@@ -7,19 +7,20 @@
  * Return: sum of tis parameters
  */
 
-int sum_all(unsigned int n, ...){
-	
+int sum_all(unsigned int n, ...)
+{
 	va_list vag;
 	int i;
-	int sum = 0
+	int sum = 0;
 
-	if(n == 0)
+	if (n == 0)
 		return (0);
 
-		va_start(vag, n)
-		for(i = 0; i < n; i++)
-			sum +=va_arg(vqg, in);
+		va_start(vag, n);
+
+		for (i = 0; i < n; i++)
+			sum += va_arg(vqg, in);
 		va_end(vag);
 
-	return(sum);
+	return (sum);
 }
