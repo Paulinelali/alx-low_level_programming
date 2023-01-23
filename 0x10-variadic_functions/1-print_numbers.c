@@ -4,7 +4,6 @@
  * print_numbers - prints numbers
  * @n: number of params
  *@separator: string to be printed between numbers
-
  * Return: no return
  */
 
